@@ -14,8 +14,8 @@ makeCacheMatrix <- function(x = matrix()) {
   
   setInverse <- function(invCache) invCache <<- invCache  ## Assigns value of invCache in parent environment
   getInverse <- function() invCache                       ## Gets the value of invCache if called
-  return(list(set = set, get = get, setInv = setInverse,  
-              getInv = getInverse))                       
+  list(set = set, get = get, setInv = setInverse,  
+              getInv = getInverse)                       
 }
 
 ## This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
